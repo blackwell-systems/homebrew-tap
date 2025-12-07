@@ -11,7 +11,7 @@ class Pipeboard < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.8.0/pipeboard_0.8.0_darwin_amd64.tar.gz"
-      sha256 "ee5c0cf59aca98baa8fa769658970506c323379fd839bd1917b78751a97e90fb"
+      sha256 "b27238c9fad398d6a7edf1410e5c89f059039e6b52fcc3d9aaa8d19a3c044f74"
 
       def install
         bin.install "pipeboard"
@@ -19,7 +19,7 @@ class Pipeboard < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.8.0/pipeboard_0.8.0_darwin_arm64.tar.gz"
-      sha256 "09460d877aa9f65474e478de49886acb71281aeafcfb07bb42077e51bdecd193"
+      sha256 "82be6e014baca602054a3283ef8b18b2e7e1b65e92bd1c23aea3438cd2a58ac0"
 
       def install
         bin.install "pipeboard"
@@ -30,14 +30,14 @@ class Pipeboard < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.8.0/pipeboard_0.8.0_linux_amd64.tar.gz"
-      sha256 "8dfb2cf8edaa8643dba5dc90c740091a559dab36fa82c610f7a867cc33f47d61"
+      sha256 "cc1449c6c8cee843efdbdf0051ffea3b00cb345e15714b596a4fc63ec3d25029"
       def install
         bin.install "pipeboard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.8.0/pipeboard_0.8.0_linux_arm64.tar.gz"
-      sha256 "82d80be69f794309749e0505897a23062f84990bbe4f0a611894a4ac28f92e97"
+      sha256 "f065799587ff0bc0595d08bd508432f225c17c063107254a10aa44a53c0e9438"
       def install
         bin.install "pipeboard"
       end
