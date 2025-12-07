@@ -5,21 +5,21 @@
 class Pipeboard < Formula
   desc "Tiny cross-platform clipboard CLI with SSH + S3 sync"
   homepage "https://github.com/blackwell-systems/pipeboard"
-  version "0.7.4"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.7.4/pipeboard_0.7.4_darwin_amd64.tar.gz"
-      sha256 "f1c6fbd3f77729c751f7a3458ab8c9d0c8110ec22a78c962b928b3cdb1270473"
+      url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.8.0/pipeboard_0.8.0_darwin_amd64.tar.gz"
+      sha256 "ee5c0cf59aca98baa8fa769658970506c323379fd839bd1917b78751a97e90fb"
 
       def install
         bin.install "pipeboard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.7.4/pipeboard_0.7.4_darwin_arm64.tar.gz"
-      sha256 "f858cb0e44608a215bf777c10e0265c0219fc7cecf89a9e653f54bf0e62d6499"
+      url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.8.0/pipeboard_0.8.0_darwin_arm64.tar.gz"
+      sha256 "09460d877aa9f65474e478de49886acb71281aeafcfb07bb42077e51bdecd193"
 
       def install
         bin.install "pipeboard"
@@ -29,15 +29,15 @@ class Pipeboard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.7.4/pipeboard_0.7.4_linux_amd64.tar.gz"
-      sha256 "4350a0e691777450c0683506ef66a280de6c38f52c52acd0a0817634baf05538"
+      url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.8.0/pipeboard_0.8.0_linux_amd64.tar.gz"
+      sha256 "8dfb2cf8edaa8643dba5dc90c740091a559dab36fa82c610f7a867cc33f47d61"
       def install
         bin.install "pipeboard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.7.4/pipeboard_0.7.4_linux_arm64.tar.gz"
-      sha256 "2743c1eb3de6eea754aec1f5ed0e6f480c1f83d808061fb98722f0d8c84480e8"
+      url "https://github.com/blackwell-systems/pipeboard/releases/download/v0.8.0/pipeboard_0.8.0_linux_arm64.tar.gz"
+      sha256 "82d80be69f794309749e0505897a23062f84990bbe4f0a611894a4ac28f92e97"
       def install
         bin.install "pipeboard"
       end
