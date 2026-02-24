@@ -4,21 +4,21 @@
 class Shelfctl < Formula
   desc "Personal library manager for PDFs using GitHub Release assets"
   homepage "https://github.com/blackwell-systems/shelfctl"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.2.2/shelfctl_0.2.2_Darwin_x86_64.tar.gz"
-      sha256 "6351e49315fabb8b0d34cbcc3e6a984a155b40a68306aa8a35c2c236508b8260"
+      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.2.3/shelfctl_0.2.3_Darwin_x86_64.tar.gz"
+      sha256 "c15bf2a95e83b7df55bfe6ab988057fbbd4cc7f06a5a858607ddf3743eda8106"
 
       def install
         bin.install "shelfctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.2.2/shelfctl_0.2.2_Darwin_arm64.tar.gz"
-      sha256 "8c04928b603f1961bef51dc1b0cf3fec9a8db0b4093205454dc58a2adb553de6"
+      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.2.3/shelfctl_0.2.3_Darwin_arm64.tar.gz"
+      sha256 "c5baea76e88b3bd1657cf856d03dd516157901729be96f2a22a91c736a768e0a"
 
       def install
         bin.install "shelfctl"
@@ -28,16 +28,16 @@ class Shelfctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.2.2/shelfctl_0.2.2_Linux_x86_64.tar.gz"
-      sha256 "3257a7dcab5be947640316988981087340d7064b3c85de8cf10a1eabc0f81748"
+      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.2.3/shelfctl_0.2.3_Linux_x86_64.tar.gz"
+      sha256 "b983d02865747f2c723c72e0990f1c108779e92701e4b5ff87e35a319f484286"
 
       def install
         bin.install "shelfctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.2.2/shelfctl_0.2.2_Linux_arm64.tar.gz"
-      sha256 "49dcc40e47f96787f253a41d25eeb9d957dccc2e2e60af15ce762c7dbcda30fd"
+      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.2.3/shelfctl_0.2.3_Linux_arm64.tar.gz"
+      sha256 "d255133379c18c81bc2eb9ee9073c95fb6c290b3e99b6d09d71ae3106c1d7e96"
 
       def install
         bin.install "shelfctl"
