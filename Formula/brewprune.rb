@@ -1,26 +1,26 @@
 class Brewprune < Formula
   desc "Smart Homebrew package cleanup with usage tracking and heuristic-scored removal"
   homepage "https://github.com/blackwell-systems/brewprune"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/brewprune/releases/download/v0.1.0/brewprune_0.1.0_darwin_arm64.tar.gz"
-      sha256 "02ae35caadd3841258082b9f3c4ad00a6009f936f0d477b5bea913ba2221f5ad"
+      url "https://github.com/blackwell-systems/brewprune/releases/download/v0.1.1/brewprune_0.1.1_darwin_arm64.tar.gz"
+      sha256 "9f57f0b5f92243f1aaa97637a8d56e80309eef78d5354ea9c0e5c27c4b02aa5b"
     else
-      url "https://github.com/blackwell-systems/brewprune/releases/download/v0.1.0/brewprune_0.1.0_darwin_amd64.tar.gz"
-      sha256 "6818e2e6357ef48046f086b7d6489409592d9a0f91c66f6fe1820d7528040682"
+      url "https://github.com/blackwell-systems/brewprune/releases/download/v0.1.1/brewprune_0.1.1_darwin_amd64.tar.gz"
+      sha256 "5c5a7e56d5ad917026de2f8291084c3dc9230224088124875e50084c6df0b0ed"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/brewprune/releases/download/v0.1.0/brewprune_0.1.0_linux_arm64.tar.gz"
-      sha256 "175c72f278467f570c8712387a01a5f7d41212f4adc1f964b1480c3f23dfcbee"
+      url "https://github.com/blackwell-systems/brewprune/releases/download/v0.1.1/brewprune_0.1.1_linux_arm64.tar.gz"
+      sha256 "b670c33766ef30c02f70b6f0881001758cfcfabe78c502aaac0d139c3d46244b"
     else
-      url "https://github.com/blackwell-systems/brewprune/releases/download/v0.1.0/brewprune_0.1.0_linux_amd64.tar.gz"
-      sha256 "8cda38cd81d88f33fe74b19cc4ee51f832519eb627b55159c9b2c831cd72d744"
+      url "https://github.com/blackwell-systems/brewprune/releases/download/v0.1.1/brewprune_0.1.1_linux_amd64.tar.gz"
+      sha256 "cec5374e6e13eda88334fb5ff9708c2af69f4015a6110aa95458f3224b40b552"
     end
   end
 
