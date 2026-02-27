@@ -24,10 +24,6 @@ class Brewprune < Formula
       end
     end
 
-    # TODO: DRAFT — Do NOT release until Wave 2 Agent E ships.
-    # The post_install block references `brewprune scan --refresh-shims` which does not
-    # exist in the binary yet. The --refresh-shims flag ships in Wave 2. Once released,
-    # update the post_install block below and remove this TODO.
     service do
       run [opt_bin/"brewprune", "watch", "--daemon"]
       keep_alive true
@@ -36,8 +32,9 @@ class Brewprune < Formula
     end
 
     def post_install
-      # TODO: --refresh-shims flag ships in Wave 2. Change to scan --refresh-shims once released.
-      system bin/"brewprune", "scan"
+      # Fast path: rebuild shim binary and refresh symlinks without full rescan.
+      # Safe to run on every brew install/upgrade — skips dep tree rebuild.
+      system bin/"brewprune", "scan", "--refresh-shims"
     end
 
     def install
