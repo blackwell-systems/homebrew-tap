@@ -40,6 +40,9 @@ class Brewprune < Formula
     def install
       bin.install "brewprune"
       bin.install "brewprune-shim"
+      zsh_completion.install "completions/brewprune.zsh" => "_brewprune"
+      bash_completion.install "completions/brewprune.bash"
+      fish_completion.install "completions/brewprune.fish"
     end
 
     test do
