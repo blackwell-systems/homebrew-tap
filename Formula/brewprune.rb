@@ -1,26 +1,26 @@
 class Brewprune < Formula
     desc "Smart Homebrew package cleanup with usage tracking and heuristic-scored removal"
     homepage "https://github.com/blackwell-systems/brewprune"
-    version "0.2.0"
+    version "0.2.1"
     license "MIT"
 
     on_macos do
       if Hardware::CPU.arm?
-        url "https://github.com/blackwell-systems/brewprune/releases/download/v0.2.0/brewprune_0.2.0_darwin_arm64.tar.gz"
-        sha256 "538b364969931538da793ab8d42582fa16340389c4380e47fde61df134259da6"
+        url "https://github.com/blackwell-systems/brewprune/releases/download/v0.2.1/brewprune_0.2.1_darwin_arm64.tar.gz"
+        sha256 "0720609d5265cebcd710315820e38ff13c470070156951c067434ae7763efa70"
       else
-        url "https://github.com/blackwell-systems/brewprune/releases/download/v0.2.0/brewprune_0.2.0_darwin_amd64.tar.gz"
-        sha256 "def3a5485004546e57c98d8caf5b7c32a830eb678e682bfe11fb2f245ce1e1f7"
+        url "https://github.com/blackwell-systems/brewprune/releases/download/v0.2.1/brewprune_0.2.1_darwin_amd64.tar.gz"
+        sha256 "a37be18648fe76725deb32ac7c47e986e3c24c044f600725ba06ecac307a2775"
       end
     end
 
     on_linux do
       if Hardware::CPU.arm?
-        url "https://github.com/blackwell-systems/brewprune/releases/download/v0.2.0/brewprune_0.2.0_linux_arm64.tar.gz"
-        sha256 "5e28e9511e5c5933f658618841028ca1c4e0b5f37f94a462bcc735e11ea92d71"
+        url "https://github.com/blackwell-systems/brewprune/releases/download/v0.2.1/brewprune_0.2.1_linux_arm64.tar.gz"
+        sha256 "4d7506c7e58037a190a272ad9b8995f6c77c425cfb653ddf234bc84926eb9af4"
       else
-        url "https://github.com/blackwell-systems/brewprune/releases/download/v0.2.0/brewprune_0.2.0_linux_amd64.tar.gz"
-        sha256 "170a810511ad91f77c43d0e832b60574a4a3204125eb33a6c42f72885ad5a4dc"
+        url "https://github.com/blackwell-systems/brewprune/releases/download/v0.2.1/brewprune_0.2.1_linux_amd64.tar.gz"
+        sha256 "fae70cd79998732e858598fe146239005a5146d3f6d663d5e9036ad753a4a9e6"
       end
     end
 
