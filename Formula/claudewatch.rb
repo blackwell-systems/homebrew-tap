@@ -1,28 +1,28 @@
 class Claudewatch < Formula
   desc "Observability for AI-assisted development workflows"
   homepage "https://github.com/blackwell-systems/claudewatch"
-  version "0.7.6"
+  version "0.7.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.6/claudewatch_0.7.6_darwin_arm64.tar.gz"
-      sha256 "9b9c638a6e36238f798305a942c352f8cdce626ed9daf6655d5f8a01bf422a6b"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.7/claudewatch_0.7.7_darwin_arm64.tar.gz"
+      sha256 "a0eb6659f946eb7081935a80415dbb3212752edf235058c0e5f298aced4b3846"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.6/claudewatch_0.7.6_darwin_amd64.tar.gz"
-      sha256 "703dcb398ea6f83895cf89275f0e29d907cac4379b5846672e99327e8dfef915"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.7/claudewatch_0.7.7_darwin_amd64.tar.gz"
+      sha256 "64909aa7ef911a0ad685f38691cabcee3e9766dc5a36742241189c3ed496d6d2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.6/claudewatch_0.7.6_linux_arm64.tar.gz"
-      sha256 "8816a891b41a88da9d7593253480194ecd7fafab2434d7bd667ce5df5ed1e588"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.7/claudewatch_0.7.7_linux_arm64.tar.gz"
+      sha256 "62ae0899a69d17910fe652f23f6bb955dd80471b38df9535000d765922e53e2d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.6/claudewatch_0.7.6_linux_amd64.tar.gz"
-      sha256 "7a7476bdc409fc0a755df55d708630882e1146c29f9fe5467b508c5180b40cbe"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.7/claudewatch_0.7.7_linux_amd64.tar.gz"
+      sha256 "001a587eddaa5e9fa131831c342c2db1230a573049adb4927d12cf4546ca7101"
     end
   end
 
