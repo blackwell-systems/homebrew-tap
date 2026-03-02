@@ -1,28 +1,28 @@
 class Claudewatch < Formula
   desc "Observability for AI-assisted development workflows"
   homepage "https://github.com/blackwell-systems/claudewatch"
-  version "0.7.5"
+  version "0.7.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.5/claudewatch_0.7.5_darwin_arm64.tar.gz"
-      sha256 "23bbf17028f03c4a0b94a71343fe8927fd5e0dc1e3d620e176889480486e6787"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.6/claudewatch_0.7.6_darwin_arm64.tar.gz"
+      sha256 "9b9c638a6e36238f798305a942c352f8cdce626ed9daf6655d5f8a01bf422a6b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.5/claudewatch_0.7.5_darwin_amd64.tar.gz"
-      sha256 "45e6640109286c4b59623be7e654a8da7be3e74448440d29d2747cdf52747f62"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.6/claudewatch_0.7.6_darwin_amd64.tar.gz"
+      sha256 "703dcb398ea6f83895cf89275f0e29d907cac4379b5846672e99327e8dfef915"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.5/claudewatch_0.7.5_linux_arm64.tar.gz"
-      sha256 "873bb86b6ff97f42d71254d2e623a6f7246fb4aa0f4cfedf8bd326e02eb5961e"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.6/claudewatch_0.7.6_linux_arm64.tar.gz"
+      sha256 "8816a891b41a88da9d7593253480194ecd7fafab2434d7bd667ce5df5ed1e588"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.5/claudewatch_0.7.5_linux_amd64.tar.gz"
-      sha256 "cb3d0c94c3ced08737e5e079a8382191fb6ea4b41fa88103c88b45f98472e712"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.7.6/claudewatch_0.7.6_linux_amd64.tar.gz"
+      sha256 "7a7476bdc409fc0a755df55d708630882e1146c29f9fe5467b508c5180b40cbe"
     end
   end
 
