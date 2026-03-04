@@ -30,6 +30,34 @@ class Claudewatch < Formula
     bin.install "claudewatch"
   end
 
+  def caveats
+    <<~EOS
+      Get started with claudewatch:
+
+      1. Set up behavioral protocols (enables Claude to self-reflect):
+         claudewatch install
+
+      2. Add MCP server to ~/.claude.json for real-time observability:
+         {
+           "mcpServers": {
+             "claudewatch": {
+               "command": "#{opt_bin}/claudewatch",
+               "args": ["mcp", "--budget", "20"]
+             }
+           }
+         }
+
+      3. Scan your Claude sessions to populate metrics:
+         claudewatch scan
+
+      4. View metrics and friction patterns:
+         claudewatch metrics --days 7
+         claudewatch gaps
+
+      Documentation: https://github.com/blackwell-systems/claudewatch#readme
+    EOS
+  end
+
   test do
     system "#{bin}/claudewatch", "--version"
   end
