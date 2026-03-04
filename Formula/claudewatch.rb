@@ -1,28 +1,28 @@
 class Claudewatch < Formula
   desc "Observability for AI-assisted development workflows"
   homepage "https://github.com/blackwell-systems/claudewatch"
-  version "0.11.0"
+  version "0.12.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.11.0/claudewatch_0.11.0_darwin_arm64.tar.gz"
-      sha256 "d33a4c024fdab8cd9dd62359a2173025fcaaf0c6682bfbcf386408e5fe651606"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.12.0/claudewatch_0.12.0_darwin_arm64.tar.gz"
+      sha256 "569d75419ecff63ab57a783235d3d2bd9da92d0217df2e13401a4d232f502126"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.11.0/claudewatch_0.11.0_darwin_amd64.tar.gz"
-      sha256 "20d611c54daf8d9e27c8de8a5e7766a58054b379160a11591a2812c6c1f0e533"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.12.0/claudewatch_0.12.0_darwin_amd64.tar.gz"
+      sha256 "0a3e01ba3ad9adca64742ef4b678235ab7672a97f993973f2dc15e95555fb534"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.11.0/claudewatch_0.11.0_linux_arm64.tar.gz"
-      sha256 "996adc5915a27cafe8461f061c6964e27b2b7117d151fd69ecfcc96d1827746f"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.12.0/claudewatch_0.12.0_linux_arm64.tar.gz"
+      sha256 "cf97627a184ec87f46bf832cba2fed33caa04bf08bac2af3746adea6891e0c48"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.11.0/claudewatch_0.11.0_linux_amd64.tar.gz"
-      sha256 "dd9b3f6502944fd5d0379b0f7e5ce61e26d699774ad901334218ffe35176e38c"
+      url "https://github.com/blackwell-systems/claudewatch/releases/download/v0.12.0/claudewatch_0.12.0_linux_amd64.tar.gz"
+      sha256 "627fd47740aac72f7e229dbf9fdccfa0b046f23219e56ceed54096c9d039f8fa"
     end
   end
 
