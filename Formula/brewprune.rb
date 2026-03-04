@@ -31,6 +31,12 @@ class Brewprune < Formula
       error_log_path var/"log/brewprune.log"
     end
 
+    def caveats
+      <<~EOS
+        Run 'brewprune quickstart' to complete setup and activate tracking.
+      EOS
+    end
+
     def post_install
       # Fast path: rebuild shim binary and refresh symlinks without full rescan.
       # Safe to run on every brew install/upgrade — skips dep tree rebuild.
