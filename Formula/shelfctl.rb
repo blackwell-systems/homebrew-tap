@@ -11,7 +11,7 @@ class Shelfctl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.6/shelfctl_0.4.6_Darwin_x86_64.tar.gz"
-      sha256 "8f96bfafba00d9f4a0ab950fb7872c41e7164c85c0362c2869ea016dca5d57ed"
+      sha256 "dbc5ee7d8190ee54b197b8ad3e7f73b77a8bc50902c32284f0ed2ae659e985f2"
 
       define_method(:install) do
         bin.install "shelfctl"
@@ -19,7 +19,7 @@ class Shelfctl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.6/shelfctl_0.4.6_Darwin_arm64.tar.gz"
-      sha256 "d87e6592576b8981d4183e3678e47428b4d11d2c0d3dd0c102395e67cc00f10c"
+      sha256 "3d2d5befb4920769b1d818ea2526489292c92e2f195332b8642cf7a4a8b68eae"
 
       define_method(:install) do
         bin.install "shelfctl"
@@ -30,14 +30,14 @@ class Shelfctl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.6/shelfctl_0.4.6_Linux_x86_64.tar.gz"
-      sha256 "c0a7b57193153eab81c3f23714e35d9f385159d53996ecfe356e25889e1270ca"
+      sha256 "09bca503158ee3015865cfcb7674ec50950ff6fab0ed4f34354257d54d8d3ab0"
       define_method(:install) do
         bin.install "shelfctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.6/shelfctl_0.4.6_Linux_arm64.tar.gz"
-      sha256 "9af28b579acbcdbcb601c19f82316ec280c961565d8987f55122ed3d12196663"
+      sha256 "c717f98a3039590112e26579c3964c25f4d15806d44994ca0721f37cdeaac20c"
       define_method(:install) do
         bin.install "shelfctl"
       end
