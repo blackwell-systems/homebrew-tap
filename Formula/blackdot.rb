@@ -5,21 +5,21 @@
 class Blackdot < Formula
   desc "Developer dotfiles and environment management CLI"
   homepage "https://github.com/blackwell-systems/blackdot"
-  version "4.0.0-rc6"
+  version "4.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0-rc6/blackdot_4.0.0-rc6_Darwin_x86_64.tar.gz"
-      sha256 "0a48e82060391ec9e77caa69dad94d9c1e502e70be1b3d17e57da04aebd4cb32"
+      url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0/blackdot_4.0.0_Darwin_x86_64.tar.gz"
+      sha256 "88e0905bc1eb68710acfe7870285d17b77b0e0c82d31f5f492231ba84b4f8555"
 
       define_method(:install) do
         bin.install "blackdot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0-rc6/blackdot_4.0.0-rc6_Darwin_arm64.tar.gz"
-      sha256 "2bebae4a04c880a94759530bbe0289d16f290c81711255da090d253211261fa9"
+      url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0/blackdot_4.0.0_Darwin_arm64.tar.gz"
+      sha256 "5105f719bde819d8f5672ee4b27e89307c1d9f21cc85aeb8c325a97e93a25423"
 
       define_method(:install) do
         bin.install "blackdot"
@@ -29,15 +29,15 @@ class Blackdot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0-rc6/blackdot_4.0.0-rc6_Linux_x86_64.tar.gz"
-      sha256 "92536776472ed2aefaec99a3be33241eeab0f3d13111ca588280dac0ea63c9c8"
+      url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0/blackdot_4.0.0_Linux_x86_64.tar.gz"
+      sha256 "60af589924cda1792f41bbe690a4582ab4ec8b67b1820b523c39617aa6276917"
       define_method(:install) do
         bin.install "blackdot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0-rc6/blackdot_4.0.0-rc6_Linux_arm64.tar.gz"
-      sha256 "15f3024e76919952f43355ff4215b718e4a174d5caf54020958cdc5ffe2b835e"
+      url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0/blackdot_4.0.0_Linux_arm64.tar.gz"
+      sha256 "bbdadcac2f6726dc19534b5139f138046d5456bb96bedd56dd9b87857a121a82"
       define_method(:install) do
         bin.install "blackdot"
       end
