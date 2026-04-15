@@ -11,7 +11,7 @@ class Blackdot < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0-rc6/blackdot_4.0.0-rc6_Darwin_x86_64.tar.gz"
-      sha256 "96f9738e528750bc103c661ecec59fc415f2a7ff5de14d0cb21080981a2c389e"
+      sha256 "6d03d2a9d4ce82fee662f87c8cea22af3481e5495df164812d0f58807ad36aa5"
 
       define_method(:install) do
         bin.install "blackdot"
@@ -19,7 +19,7 @@ class Blackdot < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0-rc6/blackdot_4.0.0-rc6_Darwin_arm64.tar.gz"
-      sha256 "7330ec33a53665df5352dfdfd9a59dcf72a0fd7134413c19ef7cc1fd201930ba"
+      sha256 "d9760754dde0466beb13da790c1fcf018b73e4a7c50b16233377722a80b9dc08"
 
       define_method(:install) do
         bin.install "blackdot"
@@ -30,14 +30,14 @@ class Blackdot < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0-rc6/blackdot_4.0.0-rc6_Linux_x86_64.tar.gz"
-      sha256 "b4278f1aa43bf3b8a09e668d35272f8d2f641cc7511c731a4dc9d0a6f92f522c"
+      sha256 "f21ccb90d6530e75942ce318aa289573a34bc897553b5ca37886cd8ed284b023"
       define_method(:install) do
         bin.install "blackdot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/blackwell-systems/blackdot/releases/download/v4.0.0-rc6/blackdot_4.0.0-rc6_Linux_arm64.tar.gz"
-      sha256 "0991838227af5ec951e1be4b88abe23787f34a7c49ccd44d97d45106958e6b7c"
+      sha256 "3c8a7a349cc17177a67e4baf0618fd2fb84047ac05ad19e8d84dde6c02adcba9"
       define_method(:install) do
         bin.install "blackdot"
       end
