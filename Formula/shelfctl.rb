@@ -5,21 +5,21 @@
 class Shelfctl < Formula
   desc "Personal library manager for PDFs using GitHub Release assets"
   homepage "https://github.com/blackwell-systems/shelfctl"
-  version "0.4.8"
+  version "0.4.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.8/shelfctl_0.4.8_Darwin_x86_64.tar.gz"
-      sha256 "b8d67b1a791cb2a8388347b9d66bc63125b0407b34253a05c6b87adee39abc17"
+      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.9/shelfctl_0.4.9_Darwin_x86_64.tar.gz"
+      sha256 "077cbb2cf5aa974d07216744d87b55fa84156856fd27f807d5017fc88d700c5e"
 
       define_method(:install) do
         bin.install "shelfctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.8/shelfctl_0.4.8_Darwin_arm64.tar.gz"
-      sha256 "1ee5b8db04744e33c216c0981b353c92be54bc13b636abc6ff5682112c3f1411"
+      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.9/shelfctl_0.4.9_Darwin_arm64.tar.gz"
+      sha256 "07e5ec061c7ec46b8d53fab807677f716f5a9b96d0190c8e85d3571cbdd59ab1"
 
       define_method(:install) do
         bin.install "shelfctl"
@@ -29,15 +29,15 @@ class Shelfctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.8/shelfctl_0.4.8_Linux_x86_64.tar.gz"
-      sha256 "b7c3dd5de49e840e77e79db4813788244a5ecdae481baee3bde8bc4e9ddd9f9b"
+      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.9/shelfctl_0.4.9_Linux_x86_64.tar.gz"
+      sha256 "d176956475afc0dd4fa254facb0ffbe2769fdf6185660590a4601a3f52ff4912"
       define_method(:install) do
         bin.install "shelfctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.8/shelfctl_0.4.8_Linux_arm64.tar.gz"
-      sha256 "b719e1c0c692c59fd2eb08bc8339d8ac53e6727f67c6d950f830b51f29287501"
+      url "https://github.com/blackwell-systems/shelfctl/releases/download/v0.4.9/shelfctl_0.4.9_Linux_arm64.tar.gz"
+      sha256 "42d5cf9d0b6ac18960a432d36c4fe177a33e0beff15778c554c69972160ea774"
       define_method(:install) do
         bin.install "shelfctl"
       end
