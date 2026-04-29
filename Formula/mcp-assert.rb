@@ -5,21 +5,21 @@
 class McpAssert < Formula
   desc "Deterministic correctness testing for MCP servers"
   homepage "https://github.com/blackwell-systems/mcp-assert"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.0/mcp-assert_0.7.0_darwin_amd64.tar.gz"
-      sha256 "486f73b51d5473639e0412e38c0a6cfc301b34242ccc5a06911256240395e3d0"
+      url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.1/mcp-assert_0.7.1_darwin_amd64.tar.gz"
+      sha256 "d65befac4ece94cce108ae96571d87d49698d7daa7295088087ae78e720bb5ab"
 
       define_method(:install) do
         bin.install "mcp-assert"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.0/mcp-assert_0.7.0_darwin_arm64.tar.gz"
-      sha256 "eef410b6bc4fcfdcef3752647af6acab8b942f0b84f6edc95b4e74ad09af665e"
+      url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.1/mcp-assert_0.7.1_darwin_arm64.tar.gz"
+      sha256 "89ce124d6e3f32dac6d0b6ac85bbb86bb3e484f314d4c3e7251ae0d425c9537f"
 
       define_method(:install) do
         bin.install "mcp-assert"
@@ -29,15 +29,15 @@ class McpAssert < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.0/mcp-assert_0.7.0_linux_amd64.tar.gz"
-      sha256 "0d3a979dd44ff349c0a585747df425f87cf3c21267a42f80b2f93731f426ce8e"
+      url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.1/mcp-assert_0.7.1_linux_amd64.tar.gz"
+      sha256 "a1b840d6e75dde95d3a8a2c734466768b055a78dde10ea2962c647632f0b8c2f"
       define_method(:install) do
         bin.install "mcp-assert"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.0/mcp-assert_0.7.0_linux_arm64.tar.gz"
-      sha256 "800fa346afa534a4b7fdb2f6eb864f918f2765234d3650bccfcebaa312e27a4d"
+      url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.1/mcp-assert_0.7.1_linux_arm64.tar.gz"
+      sha256 "55a72b5d89c6965730829f6208a27b274885d7ea271165563739490fab04f6e2"
       define_method(:install) do
         bin.install "mcp-assert"
       end
