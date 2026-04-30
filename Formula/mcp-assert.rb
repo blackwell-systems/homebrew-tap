@@ -11,7 +11,7 @@ class McpAssert < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.2/mcp-assert_0.7.2_darwin_amd64.tar.gz"
-      sha256 "306b739d4521e5f2aeb42b2f6c2e7835f713e3b7197934519962c4087860a420"
+      sha256 "ed16f9ab48177bdf647264a42733baba1b66b093fbb7e0b422e0e7ae5cb7fb28"
 
       define_method(:install) do
         bin.install "mcp-assert"
@@ -19,7 +19,7 @@ class McpAssert < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.2/mcp-assert_0.7.2_darwin_arm64.tar.gz"
-      sha256 "7701c9054b9aebf17e35e525b062d1142e1223a2487687b315d2eee91fff2820"
+      sha256 "6a7b648c436c3aa1b10048e1ac28da11b9c42258ab816fcc8b0c3e1cd809f95a"
 
       define_method(:install) do
         bin.install "mcp-assert"
@@ -30,14 +30,14 @@ class McpAssert < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.2/mcp-assert_0.7.2_linux_amd64.tar.gz"
-      sha256 "aa967f3d217846d455f5d374beeaa8895d049fbd4cc6cf66d1a2e955c20951a7"
+      sha256 "58825d02f5c8d035521a2c4aa4d162b8e5d2f4c5c2e5dc37c3091c703480eeaf"
       define_method(:install) do
         bin.install "mcp-assert"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/blackwell-systems/mcp-assert/releases/download/v0.7.2/mcp-assert_0.7.2_linux_arm64.tar.gz"
-      sha256 "2365aa683770123ec81218050dba2643b330566feb2e66aed545c8e4fe055bd2"
+      sha256 "f312eecee5cf5c67039d74cd4b982cd167996aba1002535e033a0170be455221"
       define_method(:install) do
         bin.install "mcp-assert"
       end
