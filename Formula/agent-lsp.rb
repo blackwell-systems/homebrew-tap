@@ -5,21 +5,21 @@
 class AgentLsp < Formula
   desc "MCP server exposing 50+ language server protocol tools to AI agents"
   homepage "https://github.com/blackwell-systems/agent-lsp"
-  version "0.5.3"
+  version "0.5.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.5.3/agent-lsp_darwin_amd64.tar.gz"
-      sha256 "f41b1f66b7eeeaf98e0a963165fbdf44bc210da53c79519fa30ce70fe16f2eb3"
+      url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.5.4/agent-lsp_darwin_amd64.tar.gz"
+      sha256 "19ef65a63ebb3bc58b9c91ec04cb68ea797fe4c91f1a2add15979ce8f3952e17"
 
       define_method(:install) do
         bin.install "agent-lsp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.5.3/agent-lsp_darwin_arm64.tar.gz"
-      sha256 "68f9a6e51ef20960c44f98b668027e2ae9be704950715892cacb215ac0575dbc"
+      url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.5.4/agent-lsp_darwin_arm64.tar.gz"
+      sha256 "429de3724313328b6499ae535863321680ee4dd143c8b93e3ff946cc10c698ed"
 
       define_method(:install) do
         bin.install "agent-lsp"
@@ -29,15 +29,15 @@ class AgentLsp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.5.3/agent-lsp_linux_amd64.tar.gz"
-      sha256 "5af420ab89870adce8a159fe2a3415f9db448105bc21be20ab143112d6bd2478"
+      url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.5.4/agent-lsp_linux_amd64.tar.gz"
+      sha256 "5ad5e0b426b08d66332152e3731485530614a9d804362bef58d676e35afe9ec8"
       define_method(:install) do
         bin.install "agent-lsp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.5.3/agent-lsp_linux_arm64.tar.gz"
-      sha256 "5fa67ea1ed5336fa753fe3c08cc155cc7eae872ff5a6b4b3f40f06cfcda645aa"
+      url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.5.4/agent-lsp_linux_arm64.tar.gz"
+      sha256 "0252d2e3f4222d50016fa6d5b04295077b1541f8bc683191348d941ba56f93fa"
       define_method(:install) do
         bin.install "agent-lsp"
       end
