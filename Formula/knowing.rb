@@ -2,25 +2,25 @@ class Knowing < Formula
   desc "Content-addressed graph artifact for software systems"
   homepage "https://github.com/blackwell-systems/knowing"
   license "MIT"
-  version "0.12.0"
+  version "0.14.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/knowing/releases/download/v0.12.0/knowing_darwin_arm64.tar.gz"
-      sha256 "26f656ff95bd745cbf42f82e7f015e76ee4185cea01cd480878ee9ed45f69446"
+      url "https://github.com/blackwell-systems/knowing/releases/download/v0.14.0/knowing_darwin_arm64.tar.gz"
+      sha256 "35585f9712c065a568a9fc636bf6f1e2962e51a50044157dfca513d30ae8a923"
     else
-      url "https://github.com/blackwell-systems/knowing/releases/download/v0.12.0/knowing_darwin_amd64.tar.gz"
-      sha256 "ea5abff6d71e99f82ebef29135938d665b48dd31c12f36b4cd2be77f8d2577db"
+      url "https://github.com/blackwell-systems/knowing/releases/download/v0.14.0/knowing_darwin_amd64.tar.gz"
+      sha256 "a6a7ad412c93046cee75b6f13a52dea7e4c7a9f758487fc95834e1ec414f335b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/blackwell-systems/knowing/releases/download/v0.12.0/knowing_linux_arm64.tar.gz"
-      sha256 "6bd45dc6f35c14b3a44ce932dcd2c0aa89fb97956d4af424192c98f355db1781"
+      url "https://github.com/blackwell-systems/knowing/releases/download/v0.14.0/knowing_linux_arm64.tar.gz"
+      sha256 "6cd598a0f8bfc1311c8b9578f4689b7daed9cfaf4b217d99bf16ba57261f4547"
     else
-      url "https://github.com/blackwell-systems/knowing/releases/download/v0.12.0/knowing_linux_amd64.tar.gz"
-      sha256 "48544b34d0e1b11acd7e707e6edbc84f2aef83137f200534b71ff2e83c6de7f5"
+      url "https://github.com/blackwell-systems/knowing/releases/download/v0.14.0/knowing_linux_amd64.tar.gz"
+      sha256 "725756a5074a9589d51b32e49a26cc576886d7ed52abb388c71fc37cf735c87b"
     end
   end
 
