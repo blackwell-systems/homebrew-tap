@@ -11,7 +11,7 @@ class AgentLsp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.12.0/agent-lsp_darwin_amd64.tar.gz"
-      sha256 "7ccd18d810d7591adffe619f66814e3c96744a7dd147739673c982d036b7bc11"
+      sha256 "a961a37835d8911cdd4bc34167fb6fe3e1e9fb818880ccbc4e026ea4cc75f118"
 
       define_method(:install) do
         bin.install "agent-lsp"
@@ -19,7 +19,7 @@ class AgentLsp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.12.0/agent-lsp_darwin_arm64.tar.gz"
-      sha256 "621d7917b70ec386be57d0bbbb49a72e32b78e66e3e5b50824e8e8a0f6fcc3ff"
+      sha256 "50a8bb8c226d5720e3c869d54fc0cae66c3105843e5b63138ef418e103a3d8d9"
 
       define_method(:install) do
         bin.install "agent-lsp"
@@ -30,14 +30,14 @@ class AgentLsp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.12.0/agent-lsp_linux_amd64.tar.gz"
-      sha256 "98797982adc58a127a3755b74629ef03ff99c89ca15caeb894d043dbf4b6b192"
+      sha256 "72a91c8df720ab012193a1425906f8d10c7401242bd9ba82ed434a14e0dd3b14"
       define_method(:install) do
         bin.install "agent-lsp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/blackwell-systems/agent-lsp/releases/download/v0.12.0/agent-lsp_linux_arm64.tar.gz"
-      sha256 "9c49de92baaeec105b74bc45fb7703b16b81d2fab8dfe79558f9e5483144a31b"
+      sha256 "bcf7c0c2efa8316efcc0faea08a07cd1a4b8717876a3b0f1781929265660ce96"
       define_method(:install) do
         bin.install "agent-lsp"
       end
