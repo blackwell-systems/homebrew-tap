@@ -7,20 +7,20 @@ class Knowing < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/blackwell-systems/knowing/releases/download/v0.16.0/knowing_darwin_arm64.tar.gz"
-      sha256 "36dabb22e3209be61291cf140697fc21588fa6517e3a87567476ba3a330b8115"
+      sha256 "ae29ce029e531fd0cd4799c1c228661ca1fedee03503d77cfdf0ad9c41a327b8"
     else
       url "https://github.com/blackwell-systems/knowing/releases/download/v0.16.0/knowing_darwin_amd64.tar.gz"
-      sha256 "03c58a6a81d8e7cfe4407dcd5b82b780b400b130ae43eddda360ed839204f3b3"
+      sha256 "729769a3fd1de06aec857d34b491c12ac4214d3a1001c48292ac555a0378d50a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/blackwell-systems/knowing/releases/download/v0.16.0/knowing_linux_arm64.tar.gz"
-      sha256 "42a13f29052a9ae03a1d86126e14086d3c01fee6a12d41bc16d7c0ac0883108b"
+      sha256 "1b49e7154afe4a3c612a8678510939ae05a5c006951687c707cc60166b3ddfb0"
     else
       url "https://github.com/blackwell-systems/knowing/releases/download/v0.16.0/knowing_linux_amd64.tar.gz"
-      sha256 "06bcaef37fccb0c8a0b577c915b5f6df79aeeafececc17377beeab766c7e46d7"
+      sha256 "209fb141e3592d5bf7251ff1c28bf0f1194a142fcda4c8b1901c6cbaf9461cbc"
     end
   end
 
